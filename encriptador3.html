@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/Encriptador/encriptador2.css">
+    <title>ENCRIPTADOR</title>
+</head>
+<body>
+    <header>
+        <img src="./Images/Logo alura.png" alt="Logo de Alura" width="25px" height="25px">
+    </header>
+
+    <main class="caja-total">
+         <section class="caja1">
+
+            <div class="texto1">
+             <label for="texto"></label>
+             <input class="input-texto" type="text" id="texto" name="texto" placeholder="ESCRIBA EL TEXTO AQUI">
+            </div>
+
+            <div class="boton">
+                <button class="encriptar" onclick="botonEncriptar()"> ENCRIPTAR</button>
+                <button class="encriptar" onclick="botonDesEncriptar()">DESENCRIPTAR</button>
+            </div>
+
+         </section>
+
+        <section class="caja2">
+                <textarea class="mensaje" name="mensaje" id="mensaje" cols="39" rows="10"></textarea>
+            <div class="noHayTexto">
+                <h3>No hay ningun texto escrito</h3>
+            </div>
+
+            <div class="botoncopiar">
+                <button class="copiar" onclick="botoncopiar()">copiar</button>
+            </div>
+        </section>  
+
+    </main>
+    <script src="/Encriptador/prueba.js"></script>
+</body>
+</html>
